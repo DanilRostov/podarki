@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include includes/head-podarki-nabory.pug
+	body
+		//- Block - Header
+		header.header
+			div.header__container
+				div.header__head
+					a(href="index.html").header__logo-box
+						object(type="image/svg+xml", data="img/svg/header-logo.svg")
+						span.header__logo-text подарки-сургут.рф
+					div.header__phone-box
+						object(type="image/svg+xml", data="img/svg/phone.svg")
+						a.header__phone(href="tel:+79224240580") +7 (922) 424-05-80
+					div.header__adress-box
+						object(type="image/svg+xml", data="img/svg/header-shop.svg")
+						div.header__adress-text 
+							| ТЦ «Никольский»
+							br
+							| пр-кт Мира 5
+					div.header__burger.fade-menu-open
+						input.burger-checkbox(type='checkbox')
+						span
+				div.header__body
+					h2.header__title Подарки
+					h3.header__subtitle 
+						| к любым праздникам 
+						br 
+						| в Сургуте
+
+		//- Block - Fade-menu
+		div.fade-menu
+			div.fade-menu__container
+				div.fade-menu__close-box.fade-menu-close
+					object.fade-menu__close(type="image/svg+xml", data="img/svg/fade-menu-close.svg")
+				ul.fade-menu__list
+					li
+						a.fade-menu__item.fade-menu-close(href="podarki-14-fev.html") Подарки к 14 февраля
+					li
+						a.fade-menu__item.fade-menu-close(href="podarki-23-fev.html") Подарки к 23 февраля
+					li
+						a.fade-menu__item.fade-menu-close(href="podarki-8-march.html") Подарки к 8 марта
+					li
+						a.fade-menu__item.fade-menu-close(href="podarki-rychnaya-rabota.html") Подарки ручной работы
+					li
+						a.fade-menu__item.fade-menu__item--active.fade-menu-close(href="podarki-nabory.html") Конфеты ручной работы
+					li
+						a.fade-menu__item.fade-menu-close(href="podarki-med.html") Мёд-суфле
+					li
+						a.fade-menu__item.fade-menu-close(href="index.html#contacts") Контакты
+
+		//- Block - Menu
+		section.menu
+			div.menu__container
+				div.menu__list
+					a.menu__item(href="podarki-14-fev.html") 14 февраля
+					a.menu__item(href="podarki-23-fev.html") 23 февраля
+					a.menu__item(href="podarki-8-march.html") 8 марта
+					a.menu__item(href="podarki-rychnaya-rabota.html") Ручная работа
+					a.menu__item(href="podarki-nabory.html") Конфеты ручной работы
+					a.menu__item(href="podarki-med.html") Мёд-суфле
+					a.menu__item(href="index.html#contacts") Контакты
+
+		//- Block - Products
+		section.products
+			div.products__container
+				div.products__title 
+					| Выбери свои уникальные 
+					br
+					| конфеты ручной работы
+				div.products__body
+					a(href="index.html").products__btn-main << Вернуться на главную
+					
+					div.products__list
+						include mixins/product-default.pug
+						+product-nabory-png('1', 'Конфеты ручной работы "Летто"', 'Нежное суфле. Цена указана за 1 кг. Производитель: кондитерская фабрика "Акконд"', '799')
+						+product-nabory-png('2', 'Конфеты ручной работы "Кедровая фантазия"', 'Ассорти из кедровых орехов и натуральных ягод. Вес: 210 гр. Производитель: эко-фабрика "Сибирский кедр"', '585')
+						+product-nabory-png('3', 'Конфеты ручной работы "Болетто"', 'Конфеты ручной работы. Вес: 225 гр. Производитель: кондитерская фабрика "Акконд" ', '224')
+						+product-nabory-jpg('9', 'Конфеты ручной работы "Кедровый грильяж ассорти"', 'Цельные кедровые орехи с клюквой, черникой, облепихой. Вес: 120 гр. Производитель: эко-фабрика "Сибирский кедр"', '415')
+						+product-nabory-png('5', 'Конфеты ручной работы "Болетто"', 'Конфеты ручной работы. Нежное суфле. Вес: 400 гр. Производитель: кондитерская фабрика "Акконд"', '411')
+						+product-nabory-jpg('10', 'Конфеты ручной работы "Ягодень"', 'Ассорти из конфет с натуральным соком ягод. Вес: 200 гр. Производитель: эко-фабрика "Сибирский кедр"', '300')
+						+product-nabory-png('6', 'Конфеты ручной работы "Болетто"', 'Нежное суфле. Цена указана за 1 кг. Производитель: кондитерская фабрика "Акконд"', '799')
+						+product-nabory-jpg('8', 'Конфеты ручной работы "Сибирский кедр"', 'Ассорти из кедровых орехов и натуральных ягод. Вес: 220 гр. Производитель: эко-фабрика "Сибирский кедр"', '650')
+						+product-nabory-jpg('12', 'Конфеты ручной работы "Кедровый трюфель"', 'Цельные кедровые орехи. Вес: 115 гр. Производитель: эко-фабрика "Сибирский кедр"', '375')
+						+product-nabory-png('8', 'Конфеты ручной работы "Кедровая коллекция"', 'Натуральные цельные кедровые орехи. Вес: 130 гр. Производитель: эко-фабрика "Сибирский кедр"', '380')
+						+product-nabory-jpg('11', 'Конфеты ручной работы "Кедровый марципан"', 'Цельные кедровые орехи. Вес: 170 гр. Производитель: эко-фабрика "Сибирский кедр"', '390')
+						+product-nabory-png('9', 'Конфеты ручной работы "Кедровый грильяж с черемухой"', 'Цельные кедровые орехи с черемухой. Вес: 120 гр. Производитель: эко-фабрика "Сибирский кедр"', '415')
+						+product-nabory-png('10', 'Конфеты ручной работы "Кедровый трюфель"', 'Цельные кедровые орехи. Вес: 115 гр. Производитель: эко-фабрика "Сибирский кедр"', '375')
+						+product-nabory-jpg('1', 'Конфеты ручной работы "Ягодень"', 'Ассорти из конфет с натуральным соком ягод. Вес: 200 гр. Производитель: эко-фабрика "Сибирский кедр"', '300')
+						+product-nabory-jpg('2', 'Конфеты ручной работы "Фрутодень"', 'Ассорти из кедровых орехов и натуральных фруктов. Вес: 120 гр. Производитель: эко-фабрика "Сибирский кедр"', '275')
+						+product-nabory-jpg('3', 'Конфеты ручной работы "Кедровые палочки"', 'Цельные кедровые орехи в шоколаде. Вес: 120 гр. Производитель: эко-фабрика "Сибирский кедр"', '490')
+						+product-nabory-jpg('5', 'Конфеты ручной работы "Кедровый марципан"', 'Цельные кедровые орехи. Вес: 170 гр. Производитель: эко-фабрика "Сибирский кедр"', '390')
+						+product-nabory-jpg('6', 'Конфеты ручной работы "Кедровый грильяж с молодой сосновой шишкой"', 'Цельные кедровые орехи с сосновой шишкой. Вес: 120 гр. Производитель: эко-фабрика "Сибирский кедр"', '415')
+						+product-nabory-jpg('7', 'Конфеты ручной работы "Кедровый грильяж ассорти"', 'Цельные кедровые орехи с клюквой, черникой, облепихой. Вес: 120 гр. Производитель: эко-фабрика "Сибирский кедр"', '415')
+
+						
+
+						
+
+					a(href="index.html").products__btn-main << Вернуться на главную
+		
+		//- Block - Recommendations
+		section.recommendations
+			div.recommendations__container
+				div.recommendations__title Посмотрите ещё
+				div.recommendations__swiper
+					div.swiper-wrapper
+						//- Slide 1
+						div.swiper-slide.recommendations__slide
+							a.recommendations__category-box.recommendations__category-box--one(href="podarki-14-fev.html")
+								h3.recommendations__category-title
+									| Подарки к
+									br
+									| 14 февраля
+								div.recommendations__category-img-box
+									img(src="img/catalog__img1--480.jpg", alt="category1")
+						//- Slide 2
+						div.swiper-slide.recommendations__slide
+							a.recommendations__category-box.recommendations__category-box--two(href="podarki-23-fev.html")
+								h3.recommendations__category-title
+									| Подарки к
+									br
+									| 23 февраля
+								div.recommendations__category-img-box
+									img(src="img/catalog__img2--480.jpg", alt="category2")
+						//- Slide 3
+						div.swiper-slide.recommendations__slide
+							a.recommendations__category-box.recommendations__category-box--three(href="podarki-8-march.html")
+								h3.recommendations__category-title
+									| Подарки к
+									br
+									| 8 марта
+								div.recommendations__category-img-box
+									img(src="img/catalog__img3--480.jpg", alt="category3")
+						//- Slide 4
+						div.swiper-slide.recommendations__slide
+							a.recommendations__category-box.recommendations__category-box--four(href="podarki-rychnaya-rabota.html")
+								h3.recommendations__category-title
+									| Подарки
+									br
+									| ручной работы
+								div.recommendations__category-img-box
+									img(src="img/catalog__img4--480.jpg", alt="category4")
+						//- Slide 5
+						div.swiper-slide.recommendations__slide
+							a.recommendations__category-box.recommendations__category-box--six(href="podarki-med.html")
+								h3.recommendations__category-title
+									| Мёд - суфле
+								div.recommendations__category-img-box
+									img(src="img/catalog__img6--480.jpg", alt="category6")
+
+					div.recommendations__pagination
+					div.recommendations__button.recommendations__button--prev
+					div.recommendations__button.recommendations__button--next
+
+		//- Block - Footer
+		footer.footer
+			div.footer__container
+				div.footer__text Copyright © все права защищены, 2018.
+
+		div#map.contacts__map.display-none
+		
+		// Yandex.Metrika counter
+		script(type='text/javascript', src="yandex-metrika/yandex-metrika.js")
+		noscript
+			div
+				img(src='https://mc.yandex.ru/watch/46803576', style='position:absolute; left:-9999px;', alt='')
+		// /Yandex.Metrika counter
+		script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+		script(src="libs/libs.js")
+		script(src="js/index.js")

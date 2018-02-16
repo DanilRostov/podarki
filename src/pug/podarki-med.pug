@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include includes/head-podarki-med.pug
+	body
+		//- Block - Header
+		header.header
+			div.header__container
+				div.header__head
+					a(href="index.html").header__logo-box
+						object(type="image/svg+xml", data="img/svg/header-logo.svg")
+						span.header__logo-text подарки-сургут.рф
+					div.header__phone-box
+						object(type="image/svg+xml", data="img/svg/phone.svg")
+						a.header__phone(href="tel:+79224240580") +7 (922) 424-05-80
+					div.header__adress-box
+						object(type="image/svg+xml", data="img/svg/header-shop.svg")
+						div.header__adress-text 
+							| ТЦ «Никольский»
+							br
+							| пр-кт Мира 5
+					div.header__burger.fade-menu-open
+						input.burger-checkbox(type='checkbox')
+						span
+				div.header__body
+					h2.header__title Подарки
+					h3.header__subtitle 
+						| к любым праздникам 
+						br 
+						| в Сургуте
+
+		//- Block - Fade-menu
+		div.fade-menu
+			div.fade-menu__container
+				div.fade-menu__close-box.fade-menu-close
+					object.fade-menu__close(type="image/svg+xml", data="img/svg/fade-menu-close.svg")
+				ul.fade-menu__list
+					li
+						a.fade-menu__item.fade-menu-close(href="podarki-14-fev.html") Подарки к 14 февраля
+					li
+						a.fade-menu__item.fade-menu-close(href="podarki-23-fev.html") Подарки к 23 февраля
+					li
+						a.fade-menu__item.fade-menu-close(href="podarki-8-march.html") Подарки к 8 марта
+					li
+						a.fade-menu__item.fade-menu-close(href="podarki-rychnaya-rabota.html") Подарки ручной работы
+					li
+						a.fade-menu__item.fade-menu-close(href="podarki-nabory.html") Конфеты ручной работы
+					li
+						a.fade-menu__item.fade-menu__item--active.fade-menu-close(href="podarki-med.html") Мёд-суфле
+					li
+						a.fade-menu__item.fade-menu-close(href="index.html#contacts") Контакты
+
+		//- Block - Menu
+		section.menu
+			div.menu__container
+				div.menu__list
+					a.menu__item(href="podarki-14-fev.html") 14 февраля
+					a.menu__item(href="podarki-23-fev.html") 23 февраля
+					a.menu__item(href="podarki-8-march.html") 8 марта
+					a.menu__item(href="podarki-rychnaya-rabota.html") Ручная работа
+					a.menu__item(href="podarki-nabory.html") Конфеты ручной работы
+					a.menu__item(href="podarki-med.html") Мёд-суфле
+					a.menu__item(href="index.html#contacts") Контакты
+
+		//- Block - Products
+		section.products
+			div.products__container
+				div.products__title 
+					| Выбери свой уникальный 
+					br
+					| мёд-суфле
+				div.products__body
+					a(href="index.html").products__btn-main << Вернуться на главную
+					
+					div.products__list
+						include mixins/product-default.pug
+						+product-med-png('1', 'Мёд-суфле Peroni "Маргарита с клубникой"', 'Уникальный Мёд-суфле. Единственный в своём роде. На выбор 2 объёма: 30 гр. / 250 гр.', '140 / 620')
+						+product-med-jpg('32', 'Мёд-суфле Compliment "Манго-маракуйя"', 'Уникальный мёд. Новая серия Compliment. Единственный в своём роде. Большой выбор вкусов и начинок.', '560')
+						+product-med-png('2', 'Мёд-суфле Peroni "Малиновый сорбет"', 'Уникальный Мёд-суфле. Единственный в своём роде. На выбор 2 объёма: 30 гр. / 250 гр.', '140 / 620')
+						+product-med-png('3', 'Мёд-суфле Peroni "Имбирика с лимоном"', 'Уникальный Мёд-суфле. Единственный в своём роде. На выбор 2 объёма: 30 гр. / 250 гр.', '140 / 620')
+						+product-med-png('4', 'Медовый набор Peroni "Бриллиантовая коллекция"', 'Уникальный Мёд-суфле. Единственный в своём роде. Черный крупнолистовой чай: 70 грамм. Мед-суфле "Кедровый орешек": 250 грамм', '1 190')
+						+product-med-jpg('33', 'Мёд-суфле Compliment "Клубника-земляника"', 'Уникальный мёд. Новая серия Compliment. Единственный в своём роде. Большой выбор вкусов и начинок.', '560')
+						+product-med-png('5', 'Медовый набор Peroni "Чай и мед"', 'Уникальный медовый набор. Единственный в своём роде. 8 баночек ассорти по 30 грамм. Элитный листовой чай 40 грамм.', '2 020')
+						+product-med-png('6', 'Медовый набор Peroni "Энерджи"', 'Уникальный медовый набор. Единственный в своём роде. 4 баночки ассорти по 30 грамм.', '680')
+						+product-med-png('7', 'Мёд-суфле Peroni "Сицилийский апельсин"', 'Уникальный Мёд-суфле. Единственный в своём роде. На выбор 2 объёма: 30 гр. / 250 гр.', '140 / 620')
+						+product-med-png('8', 'Мёд-суфле Peroni "Бурбонская ваниль"', 'Уникальный Мёд-суфле. Единственный в своём роде. На выбор 2 объёма: 30 гр. / 250 гр.', '140 / 620')
+						+product-med-jpg('34', 'Мёд-суфле Compliment "Черничный пунш"', 'Уникальный мёд. Новая серия Compliment. Единственный в своём роде. Большой выбор вкусов и начинок.', '560')
+
+						+product-med-png('9', 'Мёд-суфле Peroni "Яблоко с корицей"', 'Уникальный Мёд-суфле. Единственный в своём роде. На выбор 2 объёма: 30 гр. / 250 гр.', '140 / 620')
+						+product-med-png('10', 'Мёд-суфле Peroni "Лаванда с черникой"', 'Уникальный Мёд-суфле. Единственный в своём роде. На выбор 2 объёма: 30 гр. / 250 гр.', '140 / 620')
+						+product-med-png('11', 'Мёд-суфле Peroni "Бельгийский шоколад с фундуком"', 'Уникальный Мёд-суфле. Единственный в своём роде. На выбор 2 объёма: 30 гр. / 250 гр.', '140 / 650')
+						+product-med-png('12', 'Медовый набор Peroni "Коктейльный"', 'Уникальный медовый набор. Единственный в своём роде. Мёд-суфле 4 баночки ассорти по 30 грамм.', '680')
+						+product-med-jpg('35', 'Мёд-суфле Compliment "Фисташка"', 'Уникальный мёд. Новая серия Compliment. Единственный в своём роде. Большой выбор вкусов и начинок.', '560')
+						+product-med-png('13', 'Медовый набор Peroni "Медовое путешествие"', 'Уникальный медовый набор. Единственный в своём роде. Мёд-суфле 4 баночки ассорти по 30 грамм.', '680')
+						+product-med-png('14', 'Медовый набор Peroni "Шоколад и мед"', 'Уникальный медовый набор. Единственный в своём роде. 8 баночек ассорти по 30 грамм. Элитный черный шоколад 80 грамм.', '2 020')
+						+product-med-png('15', 'Мёд-суфле Peroni "Амаретто с кокосом"', 'Уникальный Мёд-суфле. Единственный в своём роде. На выбор 2 объёма: 30 гр. / 250 гр.', '140 / 620')
+						+product-med-png('16', 'Мёд-суфле "Молочный цветок"', 'Уникальный Мёд-суфле. Единственный в своём роде. На выбор 2 объёма: 30 гр. / 250 гр.', '140 / 620')
+						+product-med-png('17', 'Мёд-суфле Peroni "Парадайз с абрикосом"', 'Уникальный Мёд-суфле. Единственный в своём роде. На выбор 2 объёма: 30 гр. / 250 гр.', '140 / 620')
+						+product-med-png('18', 'Мёд-суфле Peroni "Кедровый орешек"', 'Уникальный Мёд-суфле. Единственный в своём роде. На выбор 2 объёма: 30 гр. / 250 гр.', '140 / 620')
+						+product-med-png('19', 'Мёд-суфле Peroni "Мохито с мелиссой"', 'Уникальный Мёд-суфле. Единственный в своём роде. На выбор 2 объёма: 30 гр. / 250 гр.', '140 / 620')
+						+product-med-jpg('20', 'Мёд-суфле алтайский "С боярышником"', 'Уникальный алтайский мёд. Единственный в своём роде. Большой выбор вкусов и начинок. Стеклянная банка: 250 грамм', '320')
+						+product-med-jpg('21', 'Мёд-суфле алтайский "С брусникой"', 'Уникальный алтайский мёд. Единственный в своём роде. Большой выбор вкусов и начинок. Стеклянная банка: 250 грамм', '320')
+						+product-med-jpg('22', 'Мёд-суфле алтайский "С кедровыми орешками"', 'Уникальный алтайский мёд. Единственный в своём роде. Большой выбор вкусов и начинок. Стеклянная банка: 250 грамм', '530')
+						+product-med-jpg('23', 'Мёд-суфле алтайский "С клюквой"', 'Уникальный алтайский мёд. Единственный в своём роде. Большой выбор вкусов и начинок. Стеклянная банка: 250 грамм', '320')
+						+product-med-jpg('24', 'Мёд-суфле алтайский "С корицей"', 'Уникальный алтайский мёд. Единственный в своём роде. Большой выбор вкусов и начинок. Стеклянная банка: 250 грамм', '320')
+						+product-med-jpg('25', 'Мёд-суфле алтайский "С маточным молочком"', 'Уникальный алтайский мёд. Единственный в своём роде. Большой выбор вкусов и начинок. Стеклянная банка: 250 грамм', '320')
+						+product-med-jpg('26', 'Мёд-суфле алтайский "С мелиссой"', 'Уникальный алтайский мёд. Единственный в своём роде. Большой выбор вкусов и начинок. Стеклянная банка: 250 грамм', '320')
+						+product-med-jpg('27', 'Мёд-суфле алтайский "С облепихой"', 'Уникальный алтайский мёд. Единственный в своём роде. Большой выбор вкусов и начинок. Стеклянная банка: 250 грамм', '320')
+						+product-med-jpg('28', 'Мёд-суфле алтайский "С прополисом"', 'Уникальный алтайский мёд. Единственный в своём роде. Большой выбор вкусов и начинок. Стеклянная банка: 250 грамм', '320')
+						+product-med-jpg('29', 'Мёд-суфле алтайский "С черной смородиной"', 'Уникальный алтайский мёд. Единственный в своём роде. Большой выбор вкусов и начинок. Стеклянная банка: 250 грамм', '320')
+						+product-med-jpg('30', 'Мёд-суфле алтайский "С черникой"', 'Уникальный алтайский мёд. Единственный в своём роде. Большой выбор вкусов и начинок. Стеклянная банка: 250 грамм', '320')
+						+product-med-jpg('31', 'Мёд-суфле алтайский "С шиповником"', 'Уникальный алтайский мёд. Единственный в своём роде. Большой выбор вкусов и начинок. Стеклянная банка: 250 грамм', '320')
+						
+
+					a(href="index.html").products__btn-main << Вернуться на главную
+		
+		//- Block - Recommendations
+		section.recommendations
+			div.recommendations__container
+				div.recommendations__title Посмотрите ещё
+				div.recommendations__swiper
+					div.swiper-wrapper
+						//- Slide 1
+						div.swiper-slide.recommendations__slide
+							a.recommendations__category-box.recommendations__category-box--one(href="podarki-14-fev.html")
+								h3.recommendations__category-title
+									| Подарки к
+									br
+									| 14 февраля
+								div.recommendations__category-img-box
+									img(src="img/catalog__img1--480.jpg", alt="category1")
+						//- Slide 2
+						div.swiper-slide.recommendations__slide
+							a.recommendations__category-box.recommendations__category-box--two(href="podarki-23-fev.html")
+								h3.recommendations__category-title
+									| Подарки к
+									br
+									| 23 февраля
+								div.recommendations__category-img-box
+									img(src="img/catalog__img2--480.jpg", alt="category2")
+						//- Slide 3
+						div.swiper-slide.recommendations__slide
+							a.recommendations__category-box.recommendations__category-box--three(href="podarki-8-march.html")
+								h3.recommendations__category-title
+									| Подарки к
+									br
+									| 8 марта
+								div.recommendations__category-img-box
+									img(src="img/catalog__img3--480.jpg", alt="category3")
+						//- Slide 4
+						div.swiper-slide.recommendations__slide
+							a.recommendations__category-box.recommendations__category-box--four(href="podarki-rychnaya-rabota.html")
+								h3.recommendations__category-title
+									| Подарки
+									br
+									| ручной работы
+								div.recommendations__category-img-box
+									img(src="img/catalog__img4--480.jpg", alt="category4")
+						//- Slide 5
+						div.swiper-slide.recommendations__slide
+							a.recommendations__category-box.recommendations__category-box--five(href="podarki-nabory.html")
+								h3.recommendations__category-title
+									| Конфеты
+									br
+									| ручной работы
+								div.recommendations__category-img-box
+									img(src="img/catalog__img5--480.jpg", alt="category5")
+
+					div.recommendations__pagination
+					div.recommendations__button.recommendations__button--prev
+					div.recommendations__button.recommendations__button--next
+
+		//- Block - Footer
+		footer.footer
+			div.footer__container
+				div.footer__text Copyright © все права защищены, 2018.
+
+		div#map.contacts__map.display-none
+		
+		// Yandex.Metrika counter
+		script(type='text/javascript', src="yandex-metrika/yandex-metrika.js")
+		noscript
+			div
+				img(src='https://mc.yandex.ru/watch/46803576', style='position:absolute; left:-9999px;', alt='')
+		// /Yandex.Metrika counter
+		script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+		script(src="libs/libs.js")
+		script(src="js/index.js")

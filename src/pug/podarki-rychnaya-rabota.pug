@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include includes/head-podarki-rychnaya-rabota.pug
+	body
+		//- Block - Header
+		header.header
+			div.header__container
+				div.header__head
+					a(href="index.html").header__logo-box
+						object(type="image/svg+xml", data="img/svg/header-logo.svg")
+						span.header__logo-text подарки-сургут.рф
+					div.header__phone-box
+						object(type="image/svg+xml", data="img/svg/phone.svg")
+						a.header__phone(href="tel:+79224240580") +7 (922) 424-05-80
+					div.header__adress-box
+						object(type="image/svg+xml", data="img/svg/header-shop.svg")
+						div.header__adress-text 
+							| ТЦ «Никольский»
+							br
+							| пр-кт Мира 5
+					div.header__burger.fade-menu-open
+						input.burger-checkbox(type='checkbox')
+						span
+				div.header__body
+					h2.header__title Подарки
+					h3.header__subtitle 
+						| к любым праздникам 
+						br 
+						| в Сургуте
+
+		//- Block - Fade-menu
+		div.fade-menu
+			div.fade-menu__container
+				div.fade-menu__close-box.fade-menu-close
+					object.fade-menu__close(type="image/svg+xml", data="img/svg/fade-menu-close.svg")
+				ul.fade-menu__list
+					li
+						a.fade-menu__item.fade-menu-close(href="podarki-14-fev.html") Подарки к 14 февраля
+					li
+						a.fade-menu__item.fade-menu-close(href="podarki-23-fev.html") Подарки к 23 февраля
+					li
+						a.fade-menu__item.fade-menu-close(href="podarki-8-march.html") Подарки к 8 марта
+					li
+						a.fade-menu__item.fade-menu__item--active.fade-menu-close(href="podarki-rychnaya-rabota.html") Подарки ручной работы
+					li
+						a.fade-menu__item.fade-menu-close(href="podarki-nabory.html") Конфеты ручной работы
+					li
+						a.fade-menu__item.fade-menu-close(href="podarki-med.html") Мёд-суфле
+					li
+						a.fade-menu__item.fade-menu-close(href="index.html#contacts") Контакты
+
+		//- Block - Menu
+		section.menu
+			div.menu__container
+				div.menu__list
+					a.menu__item(href="podarki-14-fev.html") 14 февраля
+					a.menu__item(href="podarki-23-fev.html") 23 февраля
+					a.menu__item(href="podarki-8-march.html") 8 марта
+					a.menu__item(href="podarki-rychnaya-rabota.html") Ручная работа
+					a.menu__item(href="podarki-nabory.html") Конфеты ручной работы
+					a.menu__item(href="podarki-med.html") Мёд-суфле
+					a.menu__item(href="index.html#contacts") Контакты
+
+		//- Block - Products
+		section.products
+			div.products__container
+				div.products__title 
+					| Выбери свой уникальный подарок 
+					br
+					| ручной работы
+				div.products__body
+					a(href="index.html").products__btn-main << Вернуться на главную
+					
+					div.products__list
+						include mixins/product-default.pug
+						+product-rychnaya-rabota('1', 'Конфетный букет ручной работы "Нежность"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '1 500')
+						+product-rychnaya-rabota('2', 'Конфетный букет ручной работы "Зайка"', 'Уникальный конфетный букет ручной работы. Выполнен из качественных конфет и эко материалов', '1 600')
+						+product-rychnaya-rabota('3', 'Конфетный букет ручной работы "Нежность (маленький)"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '1 200')
+						+product-rychnaya-rabota('4', 'Конфетный букет ручной работы "Весенняя капель"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '1 200')
+						+product-rychnaya-rabota('5', 'Конфетный букет ручной работы "Весенняя нежность 1"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '650')
+						+product-rychnaya-rabota('6', 'Конфетный букет ручной работы "Весенняя нежность 2"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '650')
+						+product-rychnaya-rabota('7', 'Конфетный букет ручной работы "Сердце"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '1 200')
+						+product-rychnaya-rabota('8', 'Конфетный букет ручной работы "8 марта 1"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '550')
+						+product-rychnaya-rabota('9', 'Конфетный букет ручной работы "8 марта 2"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '550')
+						+product-rychnaya-rabota('10', 'Кулек с цветами из конфет "8 марта"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '550')
+						+product-rychnaya-rabota('11', 'Конфетный букет ручной работы "Весенняя нежность 2"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '650')
+
+						+product-rychnaya-rabota('12', 'Конфетный букет ручной работы "Солнечная сказка"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '1 300')
+						+product-rychnaya-rabota('13', 'Конфетный букет ручной работы "Дуновение весны"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '1 800')
+
+						+product-rychnaya-rabota('14', 'Конфетный букет ручной работы "Мишка"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '1 600')
+						+product-rychnaya-rabota('15', 'Конфетный букет ручной работы "Сладкий велосипед"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '2 000')
+						+product-rychnaya-rabota('16', 'Конфетный букет ручной работы "Кофе в подарок"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '1 000')
+
+						+product-rychnaya-rabota('17', 'Конфетный букет ручной работы "Алые розы"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '1 550')
+						+product-rychnaya-rabota('18', 'Конфетный букет ручной работы "Очарование нежности"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '1 550')
+						+product-rychnaya-rabota('19', 'Конфетный букет ручной работы "Утренняя роса"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '1 500')
+
+					a(href="index.html").products__btn-main << Вернуться на главную
+		
+		section.recommendations
+			div.recommendations__container
+				div.recommendations__title Посмотрите ещё
+				div.recommendations__swiper
+					div.swiper-wrapper
+						//- Slide 1
+						div.swiper-slide.recommendations__slide
+							a.recommendations__category-box.recommendations__category-box--one(href="podarki-14-fev.html")
+								h3.recommendations__category-title
+									| Подарки к
+									br
+									| 14 февраля
+								div.recommendations__category-img-box
+									img(src="img/catalog__img1--480.jpg", alt="category1")
+						//- Slide 2
+						div.swiper-slide.recommendations__slide
+							a.recommendations__category-box.recommendations__category-box--two(href="podarki-23-fev.html")
+								h3.recommendations__category-title
+									| Подарки к
+									br
+									| 23 февраля
+								div.recommendations__category-img-box
+									img(src="img/catalog__img3--480.jpg", alt="category2")
+						//- Slide 3
+						div.swiper-slide.recommendations__slide
+							a.recommendations__category-box.recommendations__category-box--three(href="podarki-8-march.html")
+								h3.recommendations__category-title
+									| Подарки к
+									br
+									| 8 марта
+								div.recommendations__category-img-box
+									img(src="img/catalog__img3--480.jpg", alt="category3")
+						//- Slide 4
+						div.swiper-slide.recommendations__slide
+							a.recommendations__category-box.recommendations__category-box--five(href="podarki-rychnaya-rabota.html")
+								h3.recommendations__category-title
+									| Конфеты
+									br
+									| ручной работы
+								div.recommendations__category-img-box
+									img(src="img/catalog__img5--480.jpg", alt="category5")
+						//- Slide 5
+						div.swiper-slide.recommendations__slide
+							a.recommendations__category-box.recommendations__category-box--six(href="podarki-med.html")
+								h3.recommendations__category-title
+									| Мёд - суфле
+								div.recommendations__category-img-box
+									img(src="img/catalog__img6--480.jpg", alt="category6")
+
+					div.recommendations__pagination
+					div.recommendations__button.recommendations__button--prev
+					div.recommendations__button.recommendations__button--next
+
+		//- Block - Footer
+		footer.footer
+			div.footer__container
+				div.footer__text Copyright © все права защищены, 2018.
+
+		div#map.contacts__map.display-none
+		
+		// Yandex.Metrika counter
+		script(type='text/javascript', src="yandex-metrika/yandex-metrika.js")
+		noscript
+			div
+				img(src='https://mc.yandex.ru/watch/46803576', style='position:absolute; left:-9999px;', alt='')
+		// /Yandex.Metrika counter
+		script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+		script(src="libs/libs.js")
+		script(src="js/index.js")

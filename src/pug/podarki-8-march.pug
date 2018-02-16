@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include includes/head-podarki-8-march.pug
+	body
+		//- Block - Header
+		header.header
+			div.header__container
+				div.header__head
+					a(href="index.html").header__logo-box
+						object(type="image/svg+xml", data="img/svg/header-logo.svg")
+						span.header__logo-text подарки-сургут.рф
+					div.header__phone-box
+						object(type="image/svg+xml", data="img/svg/phone.svg")
+						a.header__phone(href="tel:+79224240580") +7 (922) 424-05-80
+					div.header__adress-box
+						object(type="image/svg+xml", data="img/svg/header-shop.svg")
+						div.header__adress-text 
+							| ТЦ «Никольский»
+							br
+							| пр-кт Мира 5
+					div.header__burger.fade-menu-open
+						input.burger-checkbox(type='checkbox')
+						span
+				div.header__body
+					h2.header__title Подарки
+					h3.header__subtitle 
+						| к любым праздникам 
+						br 
+						| в Сургуте
+
+		//- Block - Fade-menu
+		div.fade-menu
+			div.fade-menu__container
+				div.fade-menu__close-box.fade-menu-close
+					object.fade-menu__close(type="image/svg+xml", data="img/svg/fade-menu-close.svg")
+				ul.fade-menu__list
+					li
+						a.fade-menu__item.fade-menu-close(href="podarki-14-fev.html") Подарки к 14 февраля
+					li
+						a.fade-menu__item.fade-menu-close(href="podarki-23-fev.html") Подарки к 23 февраля
+					li
+						a.fade-menu__item.fade-menu__item--active.fade-menu-close(href="podarki-8-march.html") Подарки к 8 марта
+					li
+						a.fade-menu__item.fade-menu-close(href="podarki-rychnaya-rabota.html") Подарки ручной работы
+					li
+						a.fade-menu__item.fade-menu-close(href="podarki-nabory.html") Конфеты ручной работы
+					li
+						a.fade-menu__item.fade-menu-close(href="podarki-med.html") Мёд-суфле
+					li
+						a.fade-menu__item.fade-menu-close(href="index.html#contacts") Контакты
+
+		//- Block - Menu
+		section.menu
+			div.menu__container
+				div.menu__list
+					a.menu__item(href="podarki-14-fev.html") 14 февраля
+					a.menu__item(href="podarki-23-fev.html") 23 февраля
+					a.menu__item(href="podarki-8-march.html") 8 марта
+					a.menu__item(href="podarki-rychnaya-rabota.html") Ручная работа
+					a.menu__item(href="podarki-nabory.html") Конфеты ручной работы
+					a.menu__item(href="podarki-med.html") Мёд-суфле
+					a.menu__item(href="index.html#contacts") Контакты
+
+		//- Block - Products
+		section.products
+			div.products__container
+				div.products__title 
+					| Выбери свой уникальный подарок 
+					br
+					| к 8 марта
+				div.products__body
+					a(href="index.html").products__btn-main << Вернуться на главную
+					
+					div.products__list
+						include mixins/product-default.pug
+						+product-8-march('6', 'Пряник "8 марта"', 'Уникальный пряник ручной работы. Вес: 130 гр. Начинка: вареное сгущенное молоко с грецким орехом. Упаковка: индивидуальная целлофановая', '175')
+						+product-8-march('14', 'Пряник "Сердечко"', 'Уникальный пряник ручной работы. Вес: 260 гр. Начинка: вареное сгущенное молоко с грецким орехом. Упаковка: индивидуальная целлофановая', '305')
+						+product-8-march('16', 'Пряничный тортик "Тюльпаны"', 'Уникальный пряничный тортик ручной работы. Начинка: вареное сгущенное молоко с грецким орехом. Вес: 700 гр. Упаковка: подарочная прозрачная из пластика', '765')
+						+product-14-fev('1', 'Пряничный тортик "Букет"', 'Уникальный пряничный тортик ручной работы. Начинка: вареное сгущенное молоко с грецким орехом. Вес: 700 гр. Упаковка: подарочная прозрачная из пластика', '765')
+						+product-14-fev('2', 'Имбирный пряник "Букет ромашек"', 'Уникальный имбирный пряник ручной работы. Вес: 270 гр. Упаковка: индивидуальная целлофановая', '235')
+						+product-8-march('1', 'Пряничный тортик "Веточка цветов"', 'Уникальный пряничный тортик ручной работы. Начинка: вареное сгущенное молоко с грецким орехом. Вес: 700 гр. Упаковка: подарочная прозрачная из пластика', '1 100')
+						+product-14-fev('3', 'Имбирный пряник "Букет роз"', 'Уникальный имбирный пряник ручной работы. Вес: 270 гр. Упаковка: индивидуальная целлофановая', '235')
+						+product-8-march('17', 'Пряник "Тюльпаны"', 'Уникальный пряник ручной работы. Вес: 130 гр. Начинка: вареное сгущенное молоко с грецким орехом. Упаковка: индивидуальная целлофановая', '175')
+						+product-8-march('15', 'Пряник "Тюльпан"', 'Уникальный пряник ручной работы. Вес: 130 гр. Начинка: вареное сгущенное молоко с грецким орехом. Упаковка: индивидуальная целлофановая', '175')
+						+product-14-fev('4', 'Имбирный пряник "Букет тюльпанов"', 'Уникальный имбирный пряник ручной работы. Вес: 270 гр. Упаковка: индивидуальная целлофановая', '235')
+						+product-8-march('11', 'Пряничный тортик "Цветы в корзине"', 'Уникальный пряничный тортик ручной работы. Начинка: вареное сгущенное молоко с грецким орехом. Вес: 700 гр. Упаковка: подарочная прозрачная из пластика', '765')
+						+product-14-fev('5', 'Имбирный пряник "Корзиночка с цветами"', 'Уникальный имбирный пряник ручной работы. Вес: 270 гр. Упаковка: индивидуальная целлофановая', '235')
+						+product-8-march('4', 'Пряник "Праздничные цветы"', 'Уникальный пряник ручной работы. Начинка: вареное сгущенное молоко с грецким орехом. Вес: 160 гр. Упаковка: подарочная прозрачная из пластика', '405')
+						+product-8-march('10', 'Пряничный тортик "Цветы"', 'Уникальный пряничный тортик ручной работы. Начинка: вареное сгущенное молоко с грецким орехом. Вес: 700 гр. Упаковка: подарочная прозрачная из пластика', '765')
+						+product-8-march('2', 'Пряник "Веточка цветов"', 'Уникальный пряник ручной работы. Начинка: вареное сгущенное молоко с грецким орехом. Вес: 160 гр. Упаковка: подарочная прозрачная из пластика', '405')
+						+product-8-march('20', 'Пряничный тортик ""', 'Уникальный пряничный тортик ручной работы. Начинка: вареное сгущенное молоко с грецким орехом. Вес: 700 гр. Упаковка: подарочная прозрачная из пластика', '765')
+						+product-8-march('3', 'Пряничный тортик "Праздничные цветы"', 'Уникальный пряничный тортик ручной работы. Начинка: вареное сгущенное молоко с грецким орехом. Вес: 700 гр. Упаковка: подарочная прозрачная из пластика', '1 100')
+						+product-8-march('19', 'Пряник "Торжественный праздник"', 'Уникальный пряник ручной работы. Начинка: вареное сгущенное молоко с грецким орехом. Вес: 160 гр. Упаковка: подарочная прозрачная из пластика', '405')
+						+product-8-march('5', 'Пряник "С 8 марта"', 'Уникальный пряник ручной работы. Вес: 130 гр. Начинка: вареное сгущенное молоко с грецким орехом. Упаковка: индивидуальная целлофановая', '175')
+						+product-8-march('12', 'Пряничный тортик "Корзина с цветами"', 'Уникальный пряничный тортик ручной работы. Начинка: вареное сгущенное молоко с грецким орехом. Вес: 700 гр. Упаковка: подарочная прозрачная из пластика', '765')
+						+product-8-march('7', 'Пряничный тортик "Бабочки"', 'Уникальный пряничный тортик ручной работы. Начинка: вареное сгущенное молоко с грецким орехом. Вес: 700 гр. Упаковка: подарочная прозрачная из пластика', '765')
+						+product-8-march('8', 'Пряник "Мимозы"', 'Уникальный пряник ручной работы. Начинка: вареное сгущенное молоко с грецким орехом. Вес: 160 гр. Упаковка: подарочная прозрачная из пластика', '405')
+						+product-8-march('9', 'Пряничный тортик "Зайчик с букетом"', 'Уникальный пряничный тортик ручной работы. Начинка: вареное сгущенное молоко с грецким орехом. Вес: 700 гр. Упаковка: подарочная прозрачная из пластика', '765')
+						+product-8-march('13', 'Пряничный тортик "Календарь"', 'Уникальный пряничный тортик ручной работы. Начинка: вареное сгущенное молоко с грецким орехом. Вес: 700 гр. Упаковка: подарочная прозрачная из пластика', '765')
+						+product-8-march('18', 'Пряничный тортик "Торжественный праздник"', 'Уникальный пряничный тортик ручной работы. Начинка: вареное сгущенное молоко с грецким орехом. Вес: 700 гр. Упаковка: подарочная прозрачная из пластика', '1 100')
+						
+						
+
+					a(href="index.html").products__btn-main << Вернуться на главную
+		
+		section.recommendations
+			div.recommendations__container
+				div.recommendations__title Посмотрите ещё
+				div.recommendations__swiper
+					div.swiper-wrapper
+						//- Slide 1
+						div.swiper-slide.recommendations__slide
+							a.recommendations__category-box.recommendations__category-box--one(href="podarki-14-fev.html")
+								h3.recommendations__category-title
+									| Подарки к
+									br
+									| 14 февраля
+								div.recommendations__category-img-box
+									img(src="img/catalog__img1--480.jpg", alt="category1")
+						//- Slide 2
+						div.swiper-slide.recommendations__slide
+							a.recommendations__category-box.recommendations__category-box--two(href="podarki-23-fev.html")
+								h3.recommendations__category-title
+									| Подарки к
+									br
+									| 23 февраля
+								div.recommendations__category-img-box
+									img(src="img/catalog__img2--480.jpg", alt="category2")
+						//- Slide 3
+						div.swiper-slide.recommendations__slide
+							a.recommendations__category-box.recommendations__category-box--four(href="podarki-rychnaya-rabota.html")
+								h3.recommendations__category-title
+									| Подарки
+									br
+									| ручной работы
+								div.recommendations__category-img-box
+									img(src="img/catalog__img4--480.jpg", alt="category4")
+						//- Slide 4
+						div.swiper-slide.recommendations__slide
+							a.recommendations__category-box.recommendations__category-box--five(href="podarki-nabory.html")
+								h3.recommendations__category-title
+									| Конфеты
+									br
+									| ручной работы
+								div.recommendations__category-img-box
+									img(src="img/catalog__img5--480.jpg", alt="category5")
+						//- Slide 5
+						div.swiper-slide.recommendations__slide
+							a.recommendations__category-box.recommendations__category-box--six(href="podarki-med.html")
+								h3.recommendations__category-title
+									| Мёд - суфле
+								div.recommendations__category-img-box
+									img(src="img/catalog__img6--480.jpg", alt="category6")
+
+					div.recommendations__pagination
+					div.recommendations__button.recommendations__button--prev
+					div.recommendations__button.recommendations__button--next
+
+		//- Block - Footer
+		footer.footer
+			div.footer__container
+				div.footer__text Copyright © все права защищены, 2018.
+
+		div#map.contacts__map.display-none
+		
+		// Yandex.Metrika counter
+		script(type='text/javascript', src="yandex-metrika/yandex-metrika.js")
+		noscript
+			div
+				img(src='https://mc.yandex.ru/watch/46803576', style='position:absolute; left:-9999px;', alt='')
+		// /Yandex.Metrika counter
+		script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+		script(src="libs/libs.js")
+		script(src="js/index.js")

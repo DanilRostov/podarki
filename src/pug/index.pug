@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include includes/head-main.pug
+	body
+		//- Block - Header
+		header.header
+			div.header__container
+				div.header__head
+					a(href="index.html").header__logo-box
+						object(type="image/svg+xml", data="img/svg/header-logo.svg")
+						span.header__logo-text подарки-сургут.рф
+					div.header__phone-box
+						object(type="image/svg+xml", data="img/svg/phone.svg")
+						a.header__phone(href="tel:+79224240580") +7 (922) 424-05-80
+					div.header__adress-box
+						object(type="image/svg+xml", data="img/svg/header-shop.svg")
+						div.header__adress-text 
+							| ТЦ «Никольский»
+							br
+							| пр-кт Мира 5
+					div.header__burger.fade-menu-open
+						input.burger-checkbox(type='checkbox')
+						span
+				div.header__body
+					h2.header__title Подарки
+					h3.header__subtitle 
+						| к любым праздникам 
+						br 
+						| в Сургуте
+
+		//- Block - Fade-menu
+		div.fade-menu
+			div.fade-menu__container
+				div.fade-menu__close-box.fade-menu-close
+					object.fade-menu__close(type="image/svg+xml", data="img/svg/fade-menu-close.svg")
+				ul.fade-menu__list
+					li
+						a.fade-menu__item.fade-menu-close(href="podarki-14-fev.html") Подарки к 14 февраля
+					li
+						a.fade-menu__item.fade-menu-close(href="podarki-23-fev.html") Подарки к 23 февраля
+					li
+						a.fade-menu__item.fade-menu-close(href="podarki-8-march.html") Подарки к 8 марта
+					li
+						a.fade-menu__item.fade-menu-close(href="podarki-rychnaya-rabota.html") Подарки ручной работы
+					li
+						a.fade-menu__item.fade-menu-close(href="podarki-nabory.html") Конфеты ручной работы
+					li
+						a.fade-menu__item.fade-menu-close(href="podarki-med.html") Мёд-суфле
+					li
+						a.fade-menu__item.fade-menu-close(href="#contacts") Контакты
+
+		//- Block - Menu
+		section.menu
+			div.menu__container
+				div.menu__list
+					a.menu__item(href="podarki-14-fev.html") 14 февраля
+					a.menu__item(href="podarki-23-fev.html") 23 февраля
+					a.menu__item(href="podarki-8-march.html") 8 марта
+					a.menu__item(href="podarki-rychnaya-rabota.html") Ручная работа
+					a.menu__item(href="podarki-nabory.html") Конфеты ручной работы
+					a.menu__item(href="podarki-med.html") Мёд-суфле
+					a.menu__item(href="#contacts") Контакты
+
+		//- Block - Slider
+		section.slider
+			div.slider__container
+				div.slider__swiper
+					div.swiper-wrapper 
+						div.swiper-slide.slider__slide
+							div.slider__slide-body
+								div.slider__slide-text 
+									| Подари к 14 февраля
+									br
+									| пряник «Сердечко»
+								a(href="podarki-14-fev.html").slider__slide-btn Перейти к каталогу
+						div.swiper-slide.slider__slide
+							div.slider__slide-body
+								div.slider__slide-text 
+									| Букет ручной работы
+									br
+									| это лучшее к 8 марта
+								a(href="podarki-rychnaya-rabota.html").slider__slide-btn Перейти к каталогу
+						div.swiper-slide.slider__slide
+							div.slider__slide-body
+								div.slider__slide-text 
+									| Подарки к 23 февраля
+									br
+									| на мужскую тему
+								a(href="podarki-23-fev.html").slider__slide-btn Перейти к каталогу
+					div.slider__pagination
+					div.slider__button.slider__button--prev
+					div.slider__button.slider__button--next
+
+		//- Block - Triggers
+		section.triggers
+			div.triggers__container
+				div.triggers__title У нас Вы найдёте
+				div.triggers__body
+					div.triggers__item-box
+						object(type="image/svg+xml", data="img/svg/trigger1.svg")
+						span.triggers__item Пряники ручной работы
+					div.triggers__item-box.triggers__item-box--big
+						object(type="image/svg+xml", data="img/svg/trigger2.svg")
+						span.triggers__item Букеты из конфет
+					div.triggers__item-box
+						object(type="image/svg+xml", data="img/svg/trigger3.svg")
+						span.triggers__item Имбирный пряник
+					div.triggers__item-box
+						object(type="image/svg+xml", data="img/svg/trigger4.svg")
+						span.triggers__item Конфеты ручной работы
+					div.triggers__item-box
+						object(type="image/svg+xml", data="img/svg/trigger5.svg")
+						span.triggers__item Эксклюзивный мёд - суфле
+					div.triggers__item-box
+						object(type="image/svg+xml", data="img/svg/trigger6.svg")
+						span.triggers__item Мягкие игрушки
+
+		//- Block - Catalog
+		section.catalog
+			div.catalog__container
+				div.catalog__title
+					| Выбери свой 
+					br 
+					| уникальный подарок
+				div.catalog__categories
+					a.catalog__category-box.catalog__category-box--one(href="podarki-14-fev.html")
+						h3.catalog__category-title
+							| Подарки к
+							br
+							| 14 февраля
+						div.catalog__category-img-box
+							img(src="img/catalog__img1--480.jpg", alt="category1")
+					a.catalog__category-box.catalog__category-box--two(href="podarki-23-fev.html")
+						h3.catalog__category-title
+							| Подарки к
+							br
+							| 23 февраля
+						div.catalog__category-img-box
+							img(src="img/catalog__img2--480.jpg", alt="category2")
+					a.catalog__category-box.catalog__category-box--three(href="podarki-8-march.html")
+						h3.catalog__category-title
+							| Подарки к
+							br
+							| 8 марта
+						div.catalog__category-img-box
+							img(src="img/catalog__img3--480.jpg", alt="category3")
+					a.catalog__category-box.catalog__category-box--four(href="podarki-rychnaya-rabota.html")
+						h3.catalog__category-title
+							| Подарки
+							br
+							| ручной работы
+						div.catalog__category-img-box
+							img(src="img/catalog__img4--480.jpg", alt="category4")
+					a.catalog__category-box.catalog__category-box--five(href="podarki-nabory.html")
+						h3.catalog__category-title
+							| Конфеты 
+							br
+							| ручной работы
+						div.catalog__category-img-box
+							img(src="img/catalog__img5--480.jpg", alt="category5")
+					a.catalog__category-box.catalog__category-box--six(href="podarki-med.html")
+						h3.catalog__category-title Мёд-суфле
+						div.catalog__category-img-box
+							img(src="img/catalog__img6--480.jpg", alt="category6")
+		
+		//- Block - Contacts
+		section#contacts.contacts
+			div.contacts__container
+				div.contacts__title Наши контакты
+				div.contacts__content
+					div.contacts__body
+						div.contacts__item
+							object(type="image/svg+xml", data="img/svg/map-shop.svg")
+							span.contacts__text
+								| Адрес: г. Сургут, пр-кт Мира 5,
+								br
+								| ТЦ «Никольский», 1-ый этаж
+						div.contacts__item
+							object(type="image/svg+xml", data="img/svg/map-time.svg")
+							span.contacts__text Часы работы: 10:00 - 20:00
+						div.contacts__item
+							object(type="image/svg+xml", data="img/svg/map-phone.svg")
+							span.contacts__text Телефон: +7 (922) 424-05-80
+						div.contacts__item.contacts__item--big
+							object(type="image/svg+xml", data="img/svg/map-mail.svg")
+							span.contacts__text podarki-sugut@gmail.com
+					div.contacts__map-box
+						div#map.contacts__map
+
+		//- Block - Footer
+		footer.footer
+			div.footer__container
+				div.footer__text Copyright © все права защищены, 2018.
+		
+		//- Scripts
+		// Yandex.Metrika counter
+		script(type='text/javascript', src="yandex-metrika/yandex-metrika.js")
+		noscript
+			div
+				img(src='https://mc.yandex.ru/watch/46803576', style='position:absolute; left:-9999px;', alt='')
+		// /Yandex.Metrika counter
+		script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+		script(src="libs/libs.js")
+		script(src="js/index.js")
