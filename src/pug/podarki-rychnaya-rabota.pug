@@ -35,8 +35,8 @@ html(lang="ru")
 				div.fade-menu__close-box.fade-menu-close
 					object.fade-menu__close(type="image/svg+xml", data="img/svg/fade-menu-close.svg")
 				ul.fade-menu__list
-					li
-						a.fade-menu__item.fade-menu-close(href="podarki-14-fev.html") Подарки к 14 февраля
+					//- li
+					//- 	a.fade-menu__item.fade-menu-close(href="podarki-14-fev.html") Подарки к 14 февраля
 					li
 						a.fade-menu__item.fade-menu-close(href="podarki-23-fev.html") Подарки к 23 февраля
 					li
@@ -54,7 +54,7 @@ html(lang="ru")
 		section.menu
 			div.menu__container
 				div.menu__list
-					a.menu__item(href="podarki-14-fev.html") 14 февраля
+					//- a.menu__item(href="podarki-14-fev.html") 14 февраля
 					a.menu__item(href="podarki-23-fev.html") 23 февраля
 					a.menu__item(href="podarki-8-march.html") 8 марта
 					a.menu__item(href="podarki-rychnaya-rabota.html") Ручная работа
@@ -79,20 +79,18 @@ html(lang="ru")
 						+product-rychnaya-rabota('3', 'Конфетный букет ручной работы "Нежность (маленький)"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '1 200')
 						+product-rychnaya-rabota('4', 'Конфетный букет ручной работы "Весенняя капель"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '1 200')
 						+product-rychnaya-rabota('5', 'Конфетный букет ручной работы "Весенняя нежность 1"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '650')
+						+product-rychnaya-rabota('20', 'Букет из конфет "Весенняя капель"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '750')
 						+product-rychnaya-rabota('6', 'Конфетный букет ручной работы "Весенняя нежность 2"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '650')
 						+product-rychnaya-rabota('7', 'Конфетный букет ручной работы "Сердце"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '1 200')
 						+product-rychnaya-rabota('8', 'Конфетный букет ручной работы "8 марта 1"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '550')
 						+product-rychnaya-rabota('9', 'Конфетный букет ручной работы "8 марта 2"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '550')
 						+product-rychnaya-rabota('10', 'Кулек с цветами из конфет "8 марта"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '550')
 						+product-rychnaya-rabota('11', 'Конфетный букет ручной работы "Весенняя нежность 2"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '650')
-
 						+product-rychnaya-rabota('12', 'Конфетный букет ручной работы "Солнечная сказка"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '1 300')
 						+product-rychnaya-rabota('13', 'Конфетный букет ручной работы "Дуновение весны"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '1 800')
-
 						+product-rychnaya-rabota('14', 'Конфетный букет ручной работы "Мишка"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '1 600')
 						+product-rychnaya-rabota('15', 'Конфетный букет ручной работы "Сладкий велосипед"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '2 000')
 						+product-rychnaya-rabota('16', 'Конфетный букет ручной работы "Кофе в подарок"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '1 000')
-
 						+product-rychnaya-rabota('17', 'Конфетный букет ручной работы "Алые розы"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '1 550')
 						+product-rychnaya-rabota('18', 'Конфетный букет ручной работы "Очарование нежности"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '1 550')
 						+product-rychnaya-rabota('19', 'Конфетный букет ручной работы "Утренняя роса"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '1 500')
@@ -104,15 +102,15 @@ html(lang="ru")
 				div.recommendations__title Посмотрите ещё
 				div.recommendations__swiper
 					div.swiper-wrapper
-						//- Slide 1
-						div.swiper-slide.recommendations__slide
-							a.recommendations__category-box.recommendations__category-box--one(href="podarki-14-fev.html")
-								h3.recommendations__category-title
-									| Подарки к
-									br
-									| 14 февраля
-								div.recommendations__category-img-box
-									img(src="img/catalog__img1--480.jpg", alt="category1")
+						//- //- Slide 1
+						//- div.swiper-slide.recommendations__slide
+						//- 	a.recommendations__category-box.recommendations__category-box--one(href="podarki-14-fev.html")
+						//- 		h3.recommendations__category-title
+						//- 			| Подарки к
+						//- 			br
+						//- 			| 14 февраля
+						//- 		div.recommendations__category-img-box
+						//- 			img(src="img/catalog__img1--480.jpg", alt="category1")
 						//- Slide 2
 						div.swiper-slide.recommendations__slide
 							a.recommendations__category-box.recommendations__category-box--two(href="podarki-23-fev.html")
