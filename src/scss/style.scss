@@ -288,13 +288,47 @@ $ff-marm: 'Marmelad', sans-serif;
 		& {
 			display: block;
 		}
+		& ul {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			list-style: none;
+
+			& li {
+				flex-grow: 1;
+
+				& a {
+					height: 80px;
+					display: flex;
+					text-align: center;
+				    align-items: center;
+				    justify-content: center;
+					padding: 8px 15px 10px;
+					color: #fff;
+					font-size: 20px;
+					font-family: $ff-marm;
+					transition: all 0.2s cubic-bezier(1, -0.02, 0.19, 1.72);
+
+					&:hover {
+						background-color: $color__light-red;
+						transform: scale(1.05);
+						box-shadow: 0 5px 13px 0 rgba(0,3,7,0.46);
+					}
+				}
+			}
+		}
 		&__list {
 			display: flex;
 			justify-content: space-around;
 			align-items: center;
+			list-style: none;
+
+			& li {
+				flex-grow: 1;
+			}
 		}
 		&__item {
-			width: 14.2%;
+			// width: 14.2%;
 			height: 80px;
 			display: flex;
 			text-align: center;

@@ -49,18 +49,9 @@ html(lang="ru")
 						a.fade-menu__item.fade-menu-close(href="podarki-med.html") Мёд-суфле
 					li
 						a.fade-menu__item.fade-menu-close(href="index.html#contacts") Контакты
-
+		
 		//- Block - Menu
-		section.menu
-			div.menu__container
-				div.menu__list
-					//- a.menu__item(href="podarki-14-fev.html") 14 февраля
-					a.menu__item(href="podarki-23-fev.html") 23 февраля
-					a.menu__item(href="podarki-8-march.html") 8 марта
-					a.menu__item(href="podarki-rychnaya-rabota.html") Ручная работа
-					a.menu__item(href="podarki-nabory.html") Конфеты ручной работы
-					a.menu__item(href="podarki-med.html") Мёд-суфле
-					a.menu__item(href="index.html#contacts") Контакты
+		include includes/menu.pug
 
 		//- Block - Products
 		section.products
@@ -81,6 +72,7 @@ html(lang="ru")
 						+product-rychnaya-rabota('5', 'Конфетный букет ручной работы "Весенняя нежность 1"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '650')
 						+product-rychnaya-rabota('20', 'Букет из конфет "Весенняя капель"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '750')
 						+product-rychnaya-rabota('6', 'Конфетный букет ручной работы "Весенняя нежность 2"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '650')
+						+product-8-march('49', 'Букет из конфет "Весеннее настроение"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '750')
 						+product-rychnaya-rabota('7', 'Конфетный букет ручной работы "Сердце"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '1 200')
 						+product-rychnaya-rabota('8', 'Конфетный букет ручной работы "8 марта 1"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '550')
 						+product-rychnaya-rabota('9', 'Конфетный букет ручной работы "8 марта 2"', 'Уникальный конфетный букет ручной работы. Выполнен из самых вкусных конфет и эко материалов', '550')
